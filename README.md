@@ -1,2 +1,0 @@
-# pracowniawit
-strona do ćwiczeń
