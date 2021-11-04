@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>
+Pola prostokatow B)
+</title>
+<script language="JavaScript">
+
+function Pole_mazowiecki(a_mazo,b_mazo)
+{
+a_mazo=parseFloat(a_mazo);
+b_mazo=parseFloat(b_mazo);
+
+wynik = a_mazo * b_mazo;
+document.getElementsByName('pole')[0].value=wynik.toFixed(2); /* na dokument */
+alert("Pole="+wynik.toFixed(2)+" cm2"); /*do okna Alert */
+wyprowadz_pole_mazo.innerHTML="Pole="+wynik.toFixed(2)+" cm2"+"<br>"; /* do tabeli */
+}
+
+
+function obwod_mazo(a_mazo,b_mazo)
+{
+a_mazo=parseFloat(a_mazo);
+b_mazo=parseFloat(b_mazo);
+
+wynik = a_mazo * 2 + b_mazo * 2;
+document.getElementsByName('obw')[0].value=wynik.toFixed(2); /* na dokument */
+alert("Obwod="+wynik.toFixed(2)+" cm"); /*do okna Alert */
+wyprowadz_obwod_mazo.innerHTML="Obwod="+wynik.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+}
+</script>
+</head>
+<body>
+<form name="formularz" action="..." onsubmit="Pole_mazowiecki(this.a_dana_mazo.value,this.b_dana_mazo.value); obwod_mazowiecki(this.a_dana_mazo.value,this.b_dana_mazo.value);return false">
+Podaj a=
+<input size="6" name="a_dana_mazo">
+Podaj b=
+<input size="6" name="b_dana_mazo">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="pole">
+Obwod=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="wyprowadz_pole_mazo"></tr>
+<tr id="wyprowadz_obwod_mazo"></tr>
+</table>
+</body>
+</html>
