@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>
+Drabina
+</title>
+<script language="JavaScript">
+
+function drabina_mazowiecki(a_mazo,b_mazo)
+{
+a_mazo=parseFloat(a_mazo);
+b_mazo=parseFloat(b_mazo);
+
+wynik = Math.sqrt( a_mazo * a_mazo + b_mazo * b_mazo)
+document.getElementsByName('drabina')[0].value=wynik.toFixed(2); /* na dokument */
+wyprowadz_drabine_mazo.innerHTML="Drabina="+wynik.toFixed(2)+" m"+"<br>"; /* do tabeli */
+}
+
+
+function alfa_mazowiecki(a_mazo,b_mazo)
+{
+a_mazo=parseFloat(a_mazo);
+b_mazo=parseFloat(b_mazo);
+
+rady = Math.atan2(a_mazo, b_mazo);
+wynik = rady * (180/Math.PI);
+
+document.getElementsByName('alfa')[0].value=wynik.toFixed(2); /* na dokument */
+wyprowadz_alfe_mazo.innerHTML="Stopnie="+wynik.toFixed(2)+" °"+"<br>"; /* do tabeli */
+}
+
+</script>
+</head>
+<body>
+<form name="formularz" action="..." onsubmit="drabina_mazowiecki(this.a_dana_mazo.value,this.b_dana_mazo.value); alfa_mazowiecki(this.a_dana_mazo.value,this.b_dana_mazo.value);return false">
+Podaj d=
+<input size="6" name="a_dana_mazo">
+Podaj x=
+<input size="6" name="b_dana_mazo">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="drabina">
+Alfa=
+<input size="6" name="alfa">
+</form>
+<table>
+<tr id="wyprowadz_drabine_mazo"></tr> 
+<tr id="wyprowadz_alfe_mazo"></tr> 
+</table>
+</body>
+</html>
