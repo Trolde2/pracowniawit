@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>
+Artur i Dawid oraz samolot
+</title>
+<script language="JavaScript">
+
+function wysokosc_mazowiecki(a_mazo,b_mazo)
+{
+a_mazo=parseFloat(a_mazo);
+b_mazo=parseFloat(b_mazo);
+
+wynik = Math.sqrt(b_mazo * b_mazo - a_mazo * a_mazo );
+document.getElementsByName('wysokosc')[0].value=wynik.toFixed(2); /* na dokument */
+wyprowadz_wys_mazo.innerHTML="Wysokosc="+wynik.toFixed(2)+" m"+"<br>"; /* do tabeli */
+}
+
+
+function alfa_mazowiecki(a_mazo,b_mazo)
+{
+a_mazo=parseFloat(a_mazo);
+b_mazo=parseFloat(b_mazo);
+
+rady = Math.asin(a_mazo / b_mazo);
+wynik = rady * (180/Math.PI);
+
+document.getElementsByName('alfa')[0].value=wynik.toFixed(2); /* na dokument */
+wyprowadz_alfe_mazo.innerHTML="Stopnie="+wynik.toFixed(2)+" °"+"<br>"; /* do tabeli */
+}
+
+</script>
+</head>
+<body>
+<form name="formularz" action="..." onsubmit="wysokosc_mazowiecki(this.a_dana_mazo.value,this.b_dana_mazo.value); alfa_mazowiecki(this.a_dana_mazo.value,this.b_dana_mazo.value);return false">
+Podaj odleglosc=
+<input size="6" name="a_dana_mazo">
+Podaj droge=
+<input size="6" name="b_dana_mazo">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Wysokosc =
+<input size="6" name="wysokosc">
+Kat startu=
+<input size="6" name="alfa">
+</form>
+<table>
+<tr id="wyprowadz_wys_mazo"></tr> 
+<tr id="wyprowadz_alfe_mazo"></tr> 
+</table>
+</body>
+</html>
