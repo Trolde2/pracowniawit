@@ -1,0 +1,1 @@
+W szkielecie pojawia sie trzy przyciski przycisk do dzialania programu, przycisk do kodu programu, przycisk do tabeli wykonanej  w htmlu wypelnionej tak jak jest podane w tresci zadania
