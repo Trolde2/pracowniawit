@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var im = prompt("Podaj imie: ");
+var naz = prompt("Podaj nazwisko: ");
+var a_t = im.length;
+var b_t = naz.length;
+var a=a_t%4+5;
+var b=b_t%6+20;
+
+for(i=0; i < b; i++)
+document.write("*");
+document.write("*");
+document.write("<br>");
+for (i = 0; i < a; i++)
+	{
+		for (j = 0; j < b; j++)
+		{
+			if (j == 0)
+				document.write("*");
+			else
+			{
+				document.write("&ensp;");
+			}
+			if (j == b - 1)
+				document.write("*");
+		}
+		document.write("<br>");
+	}
+for(i=0; i < b; i++)
+document.write("*");
+document.write("*");
+document.write("<br>");
+</script>
+</div>
+</body>
+</html>

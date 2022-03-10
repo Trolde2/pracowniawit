@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 72</title>
+    <script>
+      var gna = false;
+      while (!gna)
+      {
+        var l1_t_wlod = prompt("Jaka liczba wariacie?");
+        var l2_t_wlod = prompt("Jaka druga liczba wariacie?");
+
+        if ( l1_t_wlod < 20 || l1_t_wlod > 60 || l2_t_wlod < 20 || l2_t_wlod > 60)
+        {
+          alert("Nu! Liczby nie pasuja do przedzialu 20 - 60");
+        } 
+        else 
+        {
+          gna = true;
+        }
+      }
+      var pocz_wlod = prompt("Jaka wielkosc poczatkowa tekstu?");
+      var tekst_wlod = prompt("Jaki tekst?");
+      var i = pocz_wlod
+      if (l2_t_wlod <= l1_t_wlod)
+    {
+        for(; i > 0; i -= 5)
+      {
+        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_wlod+"<br></p>");
+      }
+    }
+    if(l1_t_wlod < l2_t_wlod)
+    {
+      for(; i < 100; i += 5)
+      {
+        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_wlod+"<br></p>");
+      }
+    }
+    </script>
+  </head>
+  <body></body>
+</html>

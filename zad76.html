@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 76</title>
+    <script>
+    var a = prompt("Podaj liczbę a");
+    var b = prompt("Podaj liczbę b");
+    var kekw = 50;
+    if (a < b) 
+    {
+        for (var i = a; i <= b; i++) 
+        {
+            if (i % 2 != 0) 
+            {
+            document.write("<p style=\"color: green; font-size: 50px\">" + i + "</p><br>");
+            }
+        }
+    }
+    else if (b < a) 
+    {
+        for (var i = b; i <= a; i++) 
+        {
+            if (i % 2 != 0) 
+            {
+                document.write("<p style=\"color: blue; font-size: " + kekw + "px\">" + i + "</p><br>");
+                kekw = kekw / 2;
+            }
+        }
+    }
+    else if (a == b) 
+    {
+        alert("Podane liczby są równe");
+    }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

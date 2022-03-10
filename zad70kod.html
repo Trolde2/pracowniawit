@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zadanie 70</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var a = prompt("Podaj a: ");
+var b = prompt("Podaj b: ");
+
+for(i=0; i < b; i++)
+document.write("*");
+document.write("*");
+document.write("<br>");
+for (i = 0; i < a; i++)
+	{
+		for (j = 0; j < b; j++)
+		{
+			if (j == 0)
+				document.write("*");
+			else
+			{
+				document.write("&ensp;");
+			}
+			if (j == b - 1)
+				document.write("*");
+		}
+		document.write("<br>");
+	}
+for(i=0; i < b; i++)
+document.write("*");
+document.write("*");
+document.write("<br>");
+</script>
+</div>
+</body>
+</html>

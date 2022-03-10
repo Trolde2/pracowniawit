@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 78</title>
+    <script>
+    var x_MAX = parseInt(prompt("Podaj wartość x_MAX"));
+    var y_MAX = parseInt(prompt("Podaj wartość y_MAX"));
+    var x_MIN = parseInt(prompt("Podaj wartość x_MIN"));
+    var y_MIN = parseInt(prompt("Podaj wartość y_MIN"));
+    for (var y = y_MIN; y <= y_MAX; y++) {
+      for (var x = x_MIN; x <= x_MAX; x++) {
+          document.write("<span style='font-size:30px'>(" + x + "," + y + ")</span>");
+      }
+      document.write("<br>");
+    }
+    document.write("<span style='font-size:30px'>Punkt w lewym górnym rogu: (" + x_MIN + "," + y_MIN + ")</span><br>");
+    document.write("<span style='font-size:30px'>Punkt w prawym górnym rogu: (" + x_MAX + "," + y_MIN + ")</span><br>");
+    document.write("<span style='font-size:30px'>Punkt w lewym dolnym rogu: (" + x_MIN + "," + y_MAX + ")</span><br>");
+    document.write("<span style='font-size:30px'>Punkt w prawym dolnym rogu: (" + x_MAX + "," + y_MAX + ")</span><br>");
+    document.write("<br>");
+    var d_MAX = 0;
+    for (var x = x_MIN; x <= x_MAX; x++) {
+      for (var y = y_MIN; y <= y_MAX; y++) {
+        var d = Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2)));
+        if (d > d_MAX) {
+          d_MAX = d;
+        }
+      }
+    }
+   document.write("<span style='font-size:30px'>Największa odległość od prawego do lewego ( chyba ) " + d_MAX + "</span>");
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
