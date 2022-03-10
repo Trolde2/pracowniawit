@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <title>Zadanie 72</title>
     <script>
-      var gna = false;
+ var gna = false;
       while (!gna)
       {
-        var l1_t_wlod = prompt("Jaka liczba wariacie?");
-        var l2_t_wlod = prompt("Jaka druga liczba wariacie?");
+        var l1_t_bern = prompt("Jaka liczba?");
+        var l2_t_bern = prompt("Jaka druga liczba?");
 
-        if ( l1_t_wlod < 20 || l1_t_wlod > 60 || l2_t_wlod < 20 || l2_t_wlod > 60)
+        if ( l1_t_bern < 20 || l1_t_bern > 60 || l2_t_bern < 20 || l2_t_bern > 60)
         {
           alert("Nu! Liczby nie pasuja do przedzialu 20 - 60");
         } 
@@ -19,21 +19,21 @@
           gna = true;
         }
       }
-      var pocz_wlod = prompt("Jaka wielkosc poczatkowa tekstu?");
-      var tekst_wlod = prompt("Jaki tekst?");
-      var i = pocz_wlod
-      if (l2_t_wlod <= l1_t_wlod)
+      var pocz_bern = prompt("Jaka wielkosc poczatkowa tekstu?");
+      var tekst_bern = prompt("Jaki tekst?");
+      var i = pocz_bern
+      if (l2_t_bern <= l1_t_bern)
     {
         for(; i > 0; i -= 5)
       {
-        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_wlod+"<br></p>");
+        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_bern+"<br></p>");
       }
     }
-    if(l1_t_wlod < l2_t_wlod)
+    if(l1_t_bern < l2_t_bern)
     {
       for(; i < 100; i += 5)
       {
-        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_wlod+"<br></p>");
+        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_bern+"<br></p>");
       }
     }
     </script>
