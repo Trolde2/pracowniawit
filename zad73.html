@@ -1,50 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 73</title>
+    <script>
+        for(var i = 1; i < 41; i++){
+            w=i * i + i + 41;
+            document.write("i= "+i+" w= "+w+"    ");
+            document.write("<br>");
+			if(i%5==0)
+			confirm();
+        }
+    </script>
+</head>
 <body>
-<textarea rows="36" cols="110">
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Zadanie 72</title>
-        <script>
-          var gna = false;
-          while (!gna)
-          {
-            var l1_t_bern = prompt("Jaka liczba?");
-            var l2_t_bern = prompt("Jaka druga liczba?");
     
-            if ( l1_t_bern < 20 || l1_t_bern > 60 || l2_t_bern < 20 || l2_t_bern > 60)
-            {
-              alert("Nu! Liczby nie pasuja do przedzialu 20 - 60");
-            } 
-            else 
-            {
-              gna = true;
-            }
-          }
-          var pocz_bern = prompt("Jaka wielkosc poczatkowa tekstu?");
-          var tekst_bern = prompt("Jaki tekst?");
-          var i = pocz_bern
-          if (l2_t_bern <= l1_t_bern)
-        {
-            for(; i > 0; i -= 5)
-          {
-            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_bern+"<br></p>");
-          }
-        }
-        if(l1_t_bern < l2_t_bern)
-        {
-          for(; i < 100; i += 5)
-          {
-            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_bern+"<br></p>");
-          }
-        }
-        </script>
-      </head>
-      <body></body>
-    </html>
-    
-</textarea>
-</html>
 </body>
+</html>
